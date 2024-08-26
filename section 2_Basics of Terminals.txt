@@ -1,0 +1,138 @@
+***Section_2_Video_10_Introduction to Terminal and Shell
+
+***Section_2_Video_11_Basic Shell Commands (echo, pwd, whoami)
+
+We are using gitbash terminal.
+echo command is used to print like console.log() in javascript and cout in c++
+
+echo Hello -> It will print hello
+Hello
+
+num=2 -> It will create a variable of name num
+echo $num -> It will print num
+2
+
+num2=4 -> It will create a variable of name num2
+
+echo $((num+num2)) -> It will print sum of num and num2
+6
+We are running all above echo Hello, num=2, echo $num, num2=4, echo $((num+num2)) using gitbash. We can create a file, let's say name as test.sh and keep that code inside of test.sh file and in gitbash run this file and code inside of that file will be executed.
+
+In test.sh file
+num=2
+num2=4
+echo Hello World
+echo $((num+num2))
+
+to run file we use have to write file name like this ./test.sh and that file will run and out will be
+Hello World
+6
+
+pwd: It print out current directory path
+pwd ->command
+/j/Anurag backend/course/section 2/Video_10_Introduction to Terminal and Shell ->output
+
+
+
+Section_2_Video_12_Navigating to file system(cd)
+
+cd->change directory
+./ current directory
+../ parent directory
+
+
+
+Section_2_Video_13_Listing Directory Contents (ls)
+
+ls -> see all files in current directory
+ls -a -> see all files(including hidden files) in current directory
+
+
+
+Section_2_Video_14_Creating, Copying, Moving, and Deleting Files and Directories (touch, mkdir, cp, mv, rm, rmdir)
+
+touch: to create a file
+touch filename -> to create a file
+touch index.js -> it will create a new file named index.js in current directory
+
+touch ../index.js -> it will create a new file name index.js in parent directory
+
+touch filename1, filename2, filename3 -> it will create 3 files at once 
+touch index.html index.css text.txt
+
+mkdir: to create a folder
+mkdir foldername -> it will create a folder
+mkdir foldername1, foldername2, foldername3 -> it will create 3 folder at once
+
+mkdir src -> it will create a folder named src in current directory
+mkdir routes middlewares controller -> it will create 3 folders named routes middlewares controller
+
+
+cp: copy
+Note: if we type filename only then it automatically adds path before filename.
+cp pathname/filename(file that has to be copied) pathname/foldername(folder in which file has to be copied)
+
+cp index.css src -> copy index.css file in current directory to src folder in current directory
+p index.html ./routes/userRoues -> copy index.css file in current directory to userRoues folder inside of routes folder in current directory
+
+mv: to move a file or rename a file
+mv index.css "C:\Users\HP\Desktop\wrap" -> move index.css file in cureent directory to desktop
+
+mv 'C:\Users\HP\Desktop\details.txt' ./ -> move details.js file from desktop to current directory
+mv details.txt controller -> move details.js file in current diretory to controller folder 
+
+mv script.js app.js -> rename script.js file to app.js file
+
+move+rename
+mv config.js 'C:\Users\HP\Desktop\dataConfig.js' -> move config.js file to deskop with rename config.js file to dataConfig.js
+
+rm: to delete file and folder
+rm app.js ->remove app.js file
+rm app.js server.js-> remove app.js and server.js file at once
+
+rmdir: remove empty directory(folder)
+rmdir src: it will remove the folder src(it is empty inside and do not contain file or folder inside)
+rm -r controller: it will delete folder controller and all the files and folders inside of controller. -r flag means recursively.
+rm -r ./routes/userRoues -> it will delete userRoues folder inside of routes folder in current directory. note that i will keep routes folder and delete userRoues folder only.
+
+
+
+Section_2_Video_15_Viewing and Editing Files with Commands (cat, nano, vim)
+
+cat filename -> to read a file
+cat index.js -> to read file index.js in current directory
+cat ./src/index.js -> to read file index.js in src folder in current directory
+
+nano, vim: to edit a file [these are editor]
+nano filename
+nano index.js -> it will open a editor. now change file using that editor and ctrl+x command to exit and it will ask you to save changes, type Y and the file will be modifed.
+
+vim filename
+vim index.js -> it will open vim editor. if we press esc then we will only be able to read file and if we press i then we will be able to edit the file. :w will write(edit) the file and :q will quit the file, this :q will work when we have changes file and write it.
+if we have changed file and don't won't to override and quit without saving then use :q!
+and :wq will write and quit the file
+
+
+Section_2_Video_16_What Is Prompt in Terminal?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
