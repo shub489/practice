@@ -1,0 +1,82 @@
+
+Section_1_Video_4: CLI VS GUI
+
+CLI command line interface
+GUI graphical user interface
+
+There are lot of application which have gui like youtube, google, mongodb atlas, git ect and user can use these gui to operate them. But there are also alot of application which don't have gui, so to use such applications we use CLI.
+Example: Github, we can use gui in chrome for github to add a file, commit a file ect but we can use CLI to do all these things like git add, git commit ect.
+yt-dlp(download youtube videos) also a cli application only. ms-dos operating is cli application. node js is also a cli application.
+
+
+
+Section_1_Video_5: What is nodejs and what it is used for?
+
+What is Nodejs?
+NodeJS is a Command Line Interface(CLI) application which uses v8 chrome engine and made using C++. Nodejs can understand and run javascript code outside browser. It provide runtime enviroment build on v8 chrome's javascript engine.
+Things Made using NodeJs->live server(html), esLint, Webpack, Babel, Create react app, Angular CLI, Internet of things(IoT)
+ctrl+J to open terminal in vs code
+
+
+
+Section_1_Video_6: Installing Nodejs
+
+If we want to run our javascript code, we have to make a index.html and inject that script.js file into index.html and then using live server it will be running and we can see any operation output into google chrome console. This is running in browser.
+
+If want to run script.js file, we need to download nodeJS from website and install it into our PC.
+Now we need to open VSCode and run script.js file and we can see output into vs code console. Also, we can use REPL to run javascript code in node enviroment. Type node in vs code terminal and REPL will open and now type the full code we want to execute.One other way to run it is 'run and debug' in left side vs code. we can also run node script.js command.
+
+
+
+Section_1_Video_7: Running Nodejs code
+
+Javascript we use in browser cannot read/update ect file in local system(laptop) but in nodejs we can do it. Browser can never read/update ect local file system.
+
+Nodejs code to read local system files
+const fs = require("fs")
+const file = fs.readFileSync("./note.txt")
+console.log(file.toString())
+
+
+Section_1_Video_8: Why Do We Need Node.js and How Is It Different From JavaScript in Browser?
+
+1) It has access to file system and it can create, read, update, delete, rename, move ect a file.
+example:
+	Read file: let file = fs.readFileSync("pathToFile/fileName")
+	Update file: fs.writeFileSync("./note.txt", "Hello shubham buddy") [fs.writeFileSync		("pathToFile/fileName", "what you want to edit")]
+	Rename: fs.renameSync("./note.txt", "./note_physics.txt")
+	Delete: fs.unlinkSync("./note.txt")
+
+	 To start chrome 
+	const { exec } = require('child_process');
+
+	// Command to open Google Chrome
+	exec('start chrome');
+
+2) Network Capablities: 
+Example: It can start server
+const http = require('http')
+const server = http.createServer((req, res) => res.end('Hello World'))
+server.listen(3000)
+
+3)Process management
+
+4) Interacting with operating system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
